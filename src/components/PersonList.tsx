@@ -1,10 +1,15 @@
-type PersonListProps = {
-  names: {
-    first: string;
-    last: string;
-  }[];
-};
+// type PersonListProps = {
+//   names: {
+//     first: string;
+//     last: string;
+//   }[];
+// };
 
+import { Name } from "./Person.types";
+
+type PersonListProps = {
+  names: Name[];
+};
 export function PersonList(props: PersonListProps) {
   return (
     <div>
